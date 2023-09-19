@@ -6,7 +6,8 @@
 
 fun main() {
     // Convert Phillipine Peso to Indonesian Rupiah
-    println(convertPHPToIDR(200.00))
+    val peso = 200.00
+    println("${peso} pesos is Rp ${convertPHPToIDR(200.00)} in Indonesian Rupiah")
 }
 
 fun convertPHPToIDR(peso: Double): String {
@@ -18,6 +19,6 @@ fun convertPHPToIDR(peso: Double): String {
     
     var idr = String.format("%.2f", peso * currency)
    
-    return "${peso} pesos is Rp ${idr} in Indonesian Rupiah"
+    return idr
     
 }
